@@ -1,0 +1,36 @@
+/* HEADER */
+#collapsable-nav {
+  padding: 0;
+}
+
+#collapsable-nav ul {
+  background-color: #C5DFF5;
+  border-top: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+}
+
+#collapsable-nav ul li {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+#collapsable-nav ul li:hover {
+  background-color: #B5D4EF;
+}
+
+#nav-list {
+  margin: 0;
+}
+
+#heading {
+  margin-bottom: 30px;
+}
+
+.menu-section {
+  margin-bottom: 30px;
+}
+
+.menu-section .menu-section-content {
+  background-color: #FAD5D5;
+  padding: 5px 20px 5px 20px;
+}
