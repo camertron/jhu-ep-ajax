@@ -1,0 +1,10 @@
+<ul ng-if="list !== null">
+  <li ng-repeat='item in list'>
+    {{ item.short_name}}, {{ item.name }}, {{item.description}}
+    <button type='button' class='btn btn-xs btn-default' ng-click="onRemove({index: $index})">
+      Don't want this one!
+    </button>
+  </li>
+</ul>
+
+<div ng-if="list !== null && list.length === 0" class='error'>No items found!</div>

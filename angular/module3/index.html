@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Narrow Down Your Menu Choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src='javascripts/angular.min.js'></script>
+    <script src='javascripts/app.js'></script>
+  </head>
+  <body ng-app='NarrowItDownApp'>
+    <div class="container" ng-controller='NarrowItDownController as ctrl'>
+      <h1>Narrow Down Your Chinese Menu Choice</h1>
+
+      <div class="clearfix">
+        <input ng-model='ctrl.searchTerm' type="text" placeholder="search term" class="form-control" />
+        <button ng-click='ctrl.narrowItDown()' class="btn btn-primary narrow-button">Narrow It Down For Me!</button>
+      </div>
+      <div class="found-list">
+        <div ng-if="ctrl.httpError" class="error">An error ocurred fetching menu items. Please try again.</div>
+        <found-items
+          list="ctrl.found"
+          on-remove="ctrl.removeItem(index)">
+        </found-items>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+h1 {
+  margin-bottom: 30px;
+}
+input[type="text"] {
+  width: 200px;
+  float: left;
+}
+.narrow-button {
+  float: left;
+  margin-left: 10px;
+}
+.found-list {
+  margin-top: 20px;
+}
+ul li {
+  margin-bottom: 6px;
+}
+.error {
+  font-weight: bold;
+  color: #F00;
+}
