@@ -1,0 +1,10 @@
+<h1>Items in '{{itemsCtrl.category.name}}' Category</h1>
+<p>
+  <a class='btn btn-default' ui-sref='home'>Go Home</a>
+  <a class='btn btn-default' ui-sref='categories'>Back to Categories</a>
+</p>
+<ul>
+  <li ng-repeat="item in itemsCtrl.items">
+    {{item.name}}
+  </li>
+</ul>
