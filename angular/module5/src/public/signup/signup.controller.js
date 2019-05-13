@@ -11,14 +11,17 @@
     var controller = this;
     controller.user = {};
     controller.favoriteValid = true;
+    controller.saved = false;
 
     controller.submit = function() {
       controller.doesMenuCategoryExist().then(function(exists) {
         if (exists) {
           UserService.user = controller.user;
           controller.favoriteValid = true;
+          controller.saved = true;
         } else {
           controller.favoriteValid = false;
+          controller.saved = false;
         }
       });
     }

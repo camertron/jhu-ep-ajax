@@ -5,31 +5,37 @@
       <td align='right' style='padding-right: 10px'>
         <strong>First name:</strong>
       </td>
-      <td>{{userInfoCtrl.user.firstName}}
+      <td>{{userInfoCtrl.user.firstName}}</td>
     </tr>
     <tr>
       <td align='right' style='padding-right: 10px'>
         <strong>Last name:</strong>
       </td>
-      <td>{{userInfoCtrl.user.lastName}}
+      <td>{{userInfoCtrl.user.lastName}}</td>
     </tr>
     <tr>
       <td align='right' style='padding-right: 10px'>
         <strong>Email:</strong>
       </td>
-      <td>{{userInfoCtrl.user.email}}
+      <td>{{userInfoCtrl.user.email}}</td>
     </tr>
     <tr>
       <td align='right' style='padding-right: 10px'>
         <strong>Phone:</strong>
       </td>
-      <td>{{userInfoCtrl.user.phone}}
+      <td>{{userInfoCtrl.user.phone}}</td>
     </tr>
     <tr>
       <td align='right' style='padding-right: 10px'>
         <strong>Favorite menu number:</strong>
       </td>
-      <td>{{userInfoCtrl.user.favorite}}
+      <td>{{userInfoCtrl.user.favorite}}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <img src='images/menu/{{userInfoCtrl.user.favorite | uppercase}}/{{userInfoCtrl.user.favorite | uppercase}}.jpg'>
+      </td>
     </tr>
   </table>
   <p ng-if='!userInfoCtrl.user'>
