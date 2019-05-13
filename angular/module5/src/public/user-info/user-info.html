@@ -1,0 +1,38 @@
+<div class='container'>
+  <h2>User Info</h2>
+  <table ng-if='userInfoCtrl.user'>
+    <tr>
+      <td align='right' style='padding-right: 10px'>
+        <strong>First name:</strong>
+      </td>
+      <td>{{userInfoCtrl.user.firstName}}
+    </tr>
+    <tr>
+      <td align='right' style='padding-right: 10px'>
+        <strong>Last name:</strong>
+      </td>
+      <td>{{userInfoCtrl.user.lastName}}
+    </tr>
+    <tr>
+      <td align='right' style='padding-right: 10px'>
+        <strong>Email:</strong>
+      </td>
+      <td>{{userInfoCtrl.user.email}}
+    </tr>
+    <tr>
+      <td align='right' style='padding-right: 10px'>
+        <strong>Phone:</strong>
+      </td>
+      <td>{{userInfoCtrl.user.phone}}
+    </tr>
+    <tr>
+      <td align='right' style='padding-right: 10px'>
+        <strong>Favorite menu number:</strong>
+      </td>
+      <td>{{userInfoCtrl.user.favorite}}
+    </tr>
+  </table>
+  <p ng-if='!userInfoCtrl.user'>
+    Not Signed Up Yet. <a ui-sref='signup'>Sign up Now!</a>
+  </p>
+</div>
